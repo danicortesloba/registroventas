@@ -1,0 +1,15 @@
+<%= form_with model: @sale, local: true do |f| %>
+  <p><%= f.label :cod, "Código" %></p>
+  <p><%= f.number_field :cod %></p>
+  <p><%= f.label :detail, "Detalle" %></p>
+  <p><%= f.text_area :detail %></p>
+  <p><%= f.label :category, "Categoría" %></p>
+  <p><%= f.text_field :category %></p>
+  <p><%= f.label :value, "Valor" %></p>
+  <p><%= f.number_field :value %></p>
+  <p><%= f.label :discount, "Descuento" %></p>
+  <p><%= f.number_field :discount %></p>
+  <p><%= f.label :tax, "Exento IVA" %></p>
+  <p><%= f.check_box(:tax) %></p>
+  <p><%= f.submit "Enviar" %></p>
+<% end %>
